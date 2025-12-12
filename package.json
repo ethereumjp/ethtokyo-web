@@ -4,11 +4,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode client && vite build",
+    "prepare": "lefthook install",
+    "preview": "$npm_execpath build && vite preview",
+    "check": "biome check ./app",
+    "check:fix": "biome check ./app --write",
     "lint": "biome lint ./app",
     "lint:fix": "biome lint ./app --write",
     "format": "biome format ./app",
-    "format:fix": "biome format ./app --write",
-    "preview": "$npm_execpath build && vite preview"
+    "format:fix": "biome format ./app --write"
   },
   "private": true,
   "dependencies": {
