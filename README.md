@@ -1,7 +1,9 @@
-# ETHTokyo 2025 official website
+# ETHTokyo 2026 official website
 
 ## Features
 
 - Typescript
-- Styled components ([Emotion](https://github.com/emotion-js/emotion))
+- [honox](https://github.com/honojs/honox)
 - [Biome](https://github.com/biomejs/biome) linter & formatter
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vite.dev/)

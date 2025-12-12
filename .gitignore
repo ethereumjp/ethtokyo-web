@@ -58,5 +58,4 @@
 !.yarn/sdks
 !.yarn/versions
 
-# app directory (not used in this project)
-app
+dist

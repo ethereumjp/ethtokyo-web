@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@source "../app";
+
+html {
+  @apply bg-gray-50;
+}

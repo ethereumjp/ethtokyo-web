@@ -1,5 +1,12 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -21,11 +28,10 @@
     },
     "parser": { "allowTrailingCommas": true }
   },
-  "organizeImports": {
-    "enabled": true
-  },
-  "files": {
-    "ignore": [".next/**", "node_modules/**", "out/**", ".yarn/**"]
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
   },
   "vcs": {
     "enabled": true,
