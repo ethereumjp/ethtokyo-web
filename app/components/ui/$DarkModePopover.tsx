@@ -23,7 +23,6 @@ export default function DarkModeToggle() {
   const [darkMode, setDarkMode] = useState<Theme>("system");
 
   useEffect(() => {
-    console.log("init----", localStorage.getItem("ethtokyo.theme"));
     setDarkMode((localStorage.getItem("ethtokyo.theme") as Theme) ?? "system");
   }, []);
 
