@@ -1,5 +1,5 @@
 import LogoIcon from "@/components/icons/Logo";
-import NewsletterPopover from "@/components/ui/NewsletterPopover";
+import NewsletterPopover from "@/components/ui/$NewsletterPopover";
 
 export default function Footer() {
   return (

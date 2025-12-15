@@ -1,0 +1,105 @@
+import { useState } from "hono/jsx";
+
+const target = "newsletter";
+
+export default function NewsletterDialog() {
+  const [sendStatus, setSendStatus] = useState(0);
+
+  const handleSubmit = async (e: Event) => {
+    e.preventDefault();
+    setSendStatus(1);
+
+    const form = e.currentTarget as HTMLFormElement;
+    const email = (form.elements.namedItem("email") as HTMLInputElement)
+      .value as string;
+
+    try {
+      const response = await fetch(
+        `https://api.airtable.com/v0/${import.meta.env.VITE_AIRTABLE_BASE}/${
+          import.meta.env.VITE_AIRTABLE_TABLE
+        }`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${import.meta.env.VITE_AIRTABLE_PAT}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fields: {
+              Email: email,
+            },
+          }),
+        },
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error?.message || "Failed to subscribe");
+      }
+
+      const record = await response.json();
+      setSendStatus(2);
+      console.log(
+        JSON.stringify({
+          message: "SUCCESS",
+          address: email,
+          record: record.id,
+        }),
+      );
+    } catch (err) {
+      setSendStatus(3);
+      console.error(err);
+      // Optional: Show error to user
+    }
+  };
+
+  const getNewsletterButtonLabel = () => {
+    switch (sendStatus) {
+      case 1:
+        return "Sending...";
+      case 2:
+        return "Subscribed";
+      default:
+        return "Subscribe";
+    }
+  };
+
+  return (
+    <>
+      <button popovertarget={target} popovertargetAction="show" type="button">
+        Newsletter
+      </button>
+      <div
+        id={target}
+        popover="auto"
+        class="fixed bg-transparent bottom-18 left-6 top-auto z-50"
+      >
+        <div class="w-screen-sm block mx-auto rounded-lg py-8 px-6 border style-base shadow-lg">
+          <h5 class="font-bold font-mono mb-2">Newsletter</h5>
+          <p class="text-sm font-normal mb-4">
+            Stay updated with the latest news and announcements
+          </p>
+          <form onSubmit={handleSubmit} class="grid grid-cols-3 gap-4">
+            <input
+              name="email"
+              type="email"
+              class="col-span-2"
+              placeholder="your@email"
+            />
+            <button class="col-span-1 btn flex-1" type="submit">
+              {getNewsletterButtonLabel()}
+            </button>
+          </form>
+          <button
+            class="absolute top-2 right-2 cursor-pointer w-6 h-6"
+            popovertarget={target}
+            popovertargetAction="hidden"
+            type="button"
+          >
+            x
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
