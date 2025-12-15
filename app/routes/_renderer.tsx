@@ -1,5 +1,6 @@
 import { jsxRenderer } from "hono/jsx-renderer";
 import { Link, Script } from "honox/server";
+import Meta from "@/components/layouts/Meta";
 
 export default jsxRenderer(({ children }) => {
   return (
@@ -18,10 +19,7 @@ export default jsxRenderer(({ children }) => {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans+JP:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <script
-          type="module"
-          src="https://unpkg.com/@phosphor-icons/webcomponents@2.1"
-        />
+        <Meta />
         <script src="/app/scripts/setTheme.ts" />
         <Link href="/app/style.css" rel="stylesheet" />
         <Script src="/app/client.ts" async />

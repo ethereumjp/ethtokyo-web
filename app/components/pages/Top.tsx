@@ -7,7 +7,7 @@ export default function TopPage() {
     <Layout>
       <div class="w-full pt-20 pb-8 px-6 border-b">
         <div class="max-w-screen-md mx-auto flex flex-col gap-4">
-          <Logo klass="max-w-82 h-auto mx-auto pl-4" stroke={16} />
+          <Logo klass="max-w-80 h-auto mx-auto pl-4" stroke={12} />
           <h1 class="text-4xl mt-14 font-mono font-bold">ETHTokyo'26</h1>
           <p class="text-2xl">
             🗓️ September 19-27, 2026
@@ -66,9 +66,16 @@ export default function TopPage() {
               </li>
             </ul>
           </ul>
-          <button class="btn mx-auto block" type="button">
-            Apply for events
-          </button>
+          <div class="flex items-center justify-center">
+            <a
+              class="btn mx-auto"
+              href="https://t.me/ethtokyo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Involved
+            </a>
+          </div>
         </div>
       </div>
       <div class="w-full pt-8 pb-9 px-6 border-b">

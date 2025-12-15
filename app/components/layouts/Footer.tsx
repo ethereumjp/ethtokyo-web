@@ -27,7 +27,7 @@ export default function Footer() {
           <NewsletterPopover />
         </li>
       </ul>
-      <LogoIcon klass="w-10 h-auto" />
+      <LogoIcon klass="w-10 h-auto" stroke={32} />
       {/* <p class="text-sm">&copy;2025 ETHTokyo.</p> */}
     </div>
   );

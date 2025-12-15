@@ -60,7 +60,7 @@ export default function LogoGradient({
       <path
         d="M1293.49 1706.39C1370.43 1706.39 1432.81 1768.76 1432.81 1845.71C1432.81 1922.65 1370.43 1985.03 1293.49 1985.03C1216.54 1985.03 1154.17 1922.65 1154.17 1845.71C1154.17 1768.76 1216.54 1706.39 1293.49 1706.39Z"
         fill="url(#gradient)"
-        stroke="currentColor"
+        stroke="url(#gradient)"
         stroke-width={stroke}
       />
       <path
@@ -91,25 +91,25 @@ export default function LogoGradient({
       <path
         d="M1515.79 1145L1299.46 1461L1327.54 1085.62L1515.79 1145ZM1749.48 802.571L1327.78 1070.02L1298.63 19.8771L1749.48 802.571Z"
         fill="url(#gradient)"
-        stroke="currentColor"
+        stroke="url(#gradient)"
         stroke-width={stroke}
       />
       <path
         d="M1555.66 1086.77L1344.41 1075.13L1656.3 939.749L1555.66 1086.77Z"
         fill="url(#gradient)"
-        stroke="currentColor"
+        stroke="url(#gradient)"
         stroke-width={stroke}
       />
       <path
         d="M1286.7 1460.99L1070.38 1145L1258.62 1085.62L1286.7 1460.99ZM1258.38 1070.02L836.693 802.574L1287.54 19.8771L1258.38 1070.02Z"
         fill="url(#gradient)"
-        stroke="currentColor"
+        stroke="url(#gradient)"
         stroke-width={stroke}
       />
       <path
         d="M1241.76 1075.13L1030.52 1086.77L929.87 939.749L1241.76 1075.13Z"
         fill="url(#gradient)"
-        stroke="currentColor"
+        stroke="url(#gradient)"
         stroke-width={stroke}
       />
     </svg>

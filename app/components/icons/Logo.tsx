@@ -1,9 +1,9 @@
 export default function Logo({
   klass,
-  stroke = "40",
+  stroke = 40,
 }: {
   klass?: string;
-  stroke?: string;
+  stroke?: number;
 }) {
   return (
     // biome-ignore lint/a11y/noSvgWithoutTitle: logo svg
