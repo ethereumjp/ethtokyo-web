@@ -161,7 +161,25 @@ export default function TopPage() {
                 </p>
                 <p>
                   <strong>🚖 Taxis</strong> : Taxis are available through apps
-                  like GO and Uber.
+                  like&nbsp;
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.dena.automotive.taxibell"
+                    class="ext"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    GO
+                  </a>
+                  &nbsp;and&nbsp;
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.ubercab"
+                    class="ext"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Uber
+                  </a>
+                  .
                 </p>
               </div>
             </div>
