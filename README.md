@@ -3,7 +3,14 @@
 ## Features
 
 - Typescript
-- [honox](https://github.com/honojs/honox)
-- [Biome](https://github.com/biomejs/biome) linter & formatter
-- [Tailwind CSS](https://tailwindcss.com/)
+- [HonoX](https://github.com/honojs/honox)
 - [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Biome](https://github.com/biomejs/biome) linter & formatter
+
+## Develop
+
+```bash
+pnpm install
+pnpm dev
+```

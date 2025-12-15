@@ -1,6 +1,65 @@
 @import "tailwindcss";
 @source "../app";
+@custom-variant dark (&:where(.dark, .dark *));
 
-html {
-  @apply bg-gray-50;
+@theme {
+  --color-*: initial;
+  --font-sans: "IBM Plex Sans JP", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --color-dark: #0f0f0f;
+  --color-light: #efefef;
+  --color-border: #515151;
+  --color-primary: #552266;
+  --color-secondary: #FF5544;
+}
+
+@utility style-base {
+  @apply bg-light text-dark dark:bg-dark dark:text-light;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+
+  body,
+  html {
+    @apply style-base font-sans min-h-screen;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+a {
+  @apply hover:text-secondary;
+}
+
+a.ext {
+  @apply underline;
+
+  &:after {
+    content: "\2197";
+  }
+}
+
+input {
+  @apply p-2 rounded-sm border outline-none;
+}
+
+h1, h2, h3, h4 {
+  @apply font-mono;
+}
+
+a.btn, button.btn {
+  @apply px-5 py-2 bg-dark text-light rounded-full hover:opacity-80 cursor-pointer dark:bg-light dark:text-dark;
+}
+
+a.btn-outline, button.btn-outline {
+  @apply px-5 py-2 rounded-full hover:opacity-80 cursor-pointer bg-transparent border;
 }
