@@ -10,7 +10,7 @@
   --color-light: #efefef;
   --color-border: #515151;
   --color-primary: #552266;
-  --color-secondary: #FF5544;
+  --color-secondary: #ff5544;
 }
 
 @utility style-base {
@@ -52,14 +52,19 @@ input {
   @apply p-2 rounded-sm border outline-none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   @apply font-mono;
 }
 
-a.btn, button.btn {
+a.btn,
+button.btn {
   @apply px-5 py-2 bg-dark text-light rounded-full hover:opacity-80 cursor-pointer dark:bg-light dark:text-dark;
 }
 
-a.btn-outline, button.btn-outline {
+a.btn-outline,
+button.btn-outline {
   @apply px-5 py-2 rounded-full hover:opacity-80 cursor-pointer bg-transparent border;
 }
