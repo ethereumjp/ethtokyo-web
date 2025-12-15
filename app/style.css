@@ -68,3 +68,27 @@ a.btn-outline,
 button.btn-outline {
   @apply px-5 py-2 rounded-full hover:opacity-80 cursor-pointer bg-transparent border;
 }
+
+#stop1 {
+  animation: step1 4s ease-in-out infinite alternate;
+}
+#stop2 {
+  animation: step2 4s ease-in-out infinite alternate;
+}
+
+@keyframes step1 {
+  0% {
+    stop-color: purple;
+  }
+  100% {
+    stop-color: pink;
+  }
+}
+@keyframes step2 {
+  0% {
+    stop-color: green;
+  }
+  100% {
+    stop-color: blue;
+  }
+}
