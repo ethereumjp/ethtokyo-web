@@ -26,6 +26,15 @@ export default function Footer() {
         <li>
           <NewsletterPopover />
         </li>
+        <li>
+          <a
+            href="https://github.com/ethereumjp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
       </ul>
       <LogoIcon klass="w-10 h-auto" stroke={32} />
       {/* <p class="text-sm">&copy;2025 ETHTokyo.</p> */}
