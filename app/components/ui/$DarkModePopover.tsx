@@ -1,29 +1,27 @@
 import { useEffect, useState } from "hono/jsx";
+import MoonIcon from "@/components/icons/Moon";
+import SunIcon from "@/components/icons/Sun";
 
 const target = "theme";
 
 const themes = [
   {
-    name: "system",
-    icon: "모",
-  },
-  {
     name: "dark",
-    icon: "⏾",
+    icon: <MoonIcon />,
   },
   {
     name: "light",
-    icon: "☀︎",
+    icon: <SunIcon />,
   },
 ];
 
-type Theme = "system" | "dark" | "light";
+type Theme = "dark" | "light";
 
 export default function DarkModeToggle() {
-  const [darkMode, setDarkMode] = useState<Theme>("system");
+  const [darkMode, setDarkMode] = useState<Theme>("dark");
 
   useEffect(() => {
-    setDarkMode((localStorage.getItem("ethtokyo.theme") as Theme) ?? "system");
+    setDarkMode((localStorage.getItem("ethtokyo.theme") as Theme) ?? "dark");
   }, []);
 
   useEffect(() => {
@@ -37,29 +35,11 @@ export default function DarkModeToggle() {
         type="button"
         popovertarget={target}
         popovertargetAction="show"
-        class="anchor-theme rounded-full p-2 style-base w-8 h-8 flex items-center justify-center z-50 border"
+        class="anchor-theme rounded-full p-1.5 style-base w-8 h-8 flex items-center justify-center z-50 border"
+        onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")}
       >
-        ⏾
+        {darkMode === "dark" ? <SunIcon /> : <MoonIcon />}
       </button>
-      <div
-        id={target}
-        popover="auto"
-        class="rounded shadow-lg m-0 style-base border top-16 right-6 left-auto fixed"
-      >
-        {themes.map((theme) => {
-          return (
-            <button
-              class="block w-full px-3 py-2"
-              key={theme.name}
-              type="button"
-              popovertargetAction="hide"
-              onClick={() => setDarkMode(theme.name as Theme)}
-            >
-              {theme.icon}
-            </button>
-          );
-        })}
-      </div>
     </div>
   );
 }
