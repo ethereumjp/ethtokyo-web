@@ -8,7 +8,7 @@ export default createRoute((c) => {
       <StaticPage title="Privacy Policy">
         <div class="px-4 flex flex-col gap-8">
           <p>
-            <strong>Last updated:</strong> [YYYY-MM-DD]
+            <strong>Last updated:</strong> [2025-12-25]
           </p>
           <section>
             <p>
