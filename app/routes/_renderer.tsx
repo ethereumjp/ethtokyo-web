@@ -1,5 +1,5 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import { Link, Script } from "honox/server";
+import { Link } from "honox/server";
 import Meta from "@/components/layouts/Meta";
 
 export default jsxRenderer(({ children }) => {
