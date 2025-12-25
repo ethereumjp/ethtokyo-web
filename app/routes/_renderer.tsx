@@ -30,10 +30,11 @@ export default jsxRenderer(({ children }) => {
           }}
         />
         <Link href="/app/style.css" rel="stylesheet" />
-        <Script
-          src={import.meta.env.PROD ? "/static/client.js" : "/app/client.ts"}
-          async
-        />
+        {import.meta.env.PROD ? (
+          <script type="module" src="/static/client.js"></script>
+        ) : (
+          <script type="module" src="/app/client.ts"></script>
+        )}
       </head>
       <body>{children}</body>
     </html>
