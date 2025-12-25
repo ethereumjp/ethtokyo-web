@@ -3,7 +3,6 @@ import { SITE_DESCRIPTION, SITE_DOMAIN, SITE_TITLE, SITE_URL } from "@/const";
 export default function Meta() {
   return (
     <>
-      <title>{SITE_TITLE}</title>
       <meta name="description" content={SITE_DESCRIPTION} />
       <meta property="og:url" content={SITE_URL} />
       <meta property="og:type" content="website" />

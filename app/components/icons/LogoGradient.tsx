@@ -16,6 +16,24 @@ export default function LogoGradient({
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
+        <style>
+          {`
+            #stop1 {
+              animation: step1 4s ease-in-out infinite alternate;
+            }
+            #stop2 {
+              animation: step2 4s ease-in-out infinite alternate;
+            }
+            @keyframes step1 {
+              0% { stop-color: rgba(255, 85, 68, 0.7); }
+              100% { stop-color: rgba(85, 34, 102, 0.7); }
+            }
+            @keyframes step2 {
+              0% { stop-color: rgba(85, 34, 102, 0.7); }
+              100% { stop-color: rgba(255, 85, 68, 0.7); }
+            }
+          `}
+        </style>
         <linearGradient id="gradient" gradientUnits="userSpaceOnUse">
           <stop id="stop1" offset="0%" />
           <stop id="stop2" offset="100%" />

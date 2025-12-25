@@ -66,7 +66,12 @@ export default function NewsletterDialog() {
 
   return (
     <>
-      <button popovertarget={target} popovertargetAction="show" type="button">
+      <button
+        popovertarget={target}
+        popovertargetAction="show"
+        type="button"
+        class="hover:text-secondary"
+      >
         Newsletter
       </button>
       <div

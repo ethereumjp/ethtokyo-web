@@ -1,6 +1,7 @@
 import Logo from "@/components/icons/LogoGradient";
 import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/MainLayout";
+import PastEvents from "@/components/pages/top/PastEvents";
 
 export default function TopPage() {
   return (
@@ -192,8 +193,8 @@ export default function TopPage() {
           </div>
         </div>
       </div>
-      <div class="w-full pt-8 pb-9 px-6">
-        <Footer />
+      <div class="w-full pt-8 pb-9">
+        <PastEvents />
       </div>
     </Layout>
   );

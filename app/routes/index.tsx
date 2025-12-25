@@ -1,5 +1,5 @@
 import { createRoute } from "honox/factory";
-import TopPage from "@/components/pages/Top";
+import TopPage from "@/components/pages/top/index";
 
 export default createRoute((c) => {
   return c.render(

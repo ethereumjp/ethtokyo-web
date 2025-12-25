@@ -32,7 +32,15 @@
 
   body,
   html {
-    @apply style-base font-sans min-h-screen;
+    @apply style-base font-sans;
+  }
+
+  main {
+    @apply grow;
+  }
+
+  body {
+    @apply flex flex-col min-h-svh;
   }
 
   button {
@@ -73,26 +81,28 @@ button.btn-outline {
   @apply px-5 py-2 rounded-full hover:opacity-80 cursor-pointer bg-transparent border;
 }
 
-#stop1 {
-  animation: step1 4s ease-in-out infinite alternate;
-}
-#stop2 {
-  animation: step2 4s ease-in-out infinite alternate;
+
+@media (min-width: 768px) {
+  .marquee {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
 }
 
-@keyframes step1 {
-  0% {
-    stop-color: rgba(255, 85, 68, 0.7);
-  }
-  100% {
-    stop-color: rgba(85, 34, 102, 0.7);
-  }
+.animate-marquee {
+  animation: marquee-scroll 60s linear infinite;
 }
-@keyframes step2 {
-  0% {
-    stop-color: rgba(85, 34, 102, 0.7);
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    stop-color: rgba(255, 85, 68, 0.7);
+  to {
+    transform: translateX(calc(-100% - 0.5rem));
   }
 }
