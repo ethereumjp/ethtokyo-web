@@ -20,9 +20,20 @@ export default jsxRenderer(({ children }) => {
           rel="stylesheet"
         />
         <Meta />
-        <script src="/app/scripts/setTheme.ts" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            const theme = localStorage.getItem("ethtokyo.theme") || localStorage.getItem("theme");
+            const isDark = theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+            document.documentElement.classList.toggle("dark", isDark);
+          `,
+          }}
+        />
         <Link href="/app/style.css" rel="stylesheet" />
-        <Script src="/app/client.ts" async />
+        <Script
+          src={import.meta.env.PROD ? "/static/client.js" : "/app/client.ts"}
+          async
+        />
       </head>
       <body>{children}</body>
     </html>
