@@ -21,6 +21,10 @@
   @apply bg-light text-dark dark:bg-dark dark:text-light;
 }
 
+@utility style-base-menu {
+  @apply bg-light/70 text-dark dark:bg-dark/70 dark:text-light backdrop-blur-sm;
+}
+
 @layer base {
   *,
   ::after,
@@ -36,7 +40,7 @@
   }
 
   main {
-    @apply grow;
+    @apply grow pt-12;
   }
 
   body {
@@ -80,7 +84,6 @@ a.btn-outline,
 button.btn-outline {
   @apply px-5 py-2 rounded-full hover:opacity-80 cursor-pointer bg-transparent border;
 }
-
 
 @media (min-width: 768px) {
   .marquee {

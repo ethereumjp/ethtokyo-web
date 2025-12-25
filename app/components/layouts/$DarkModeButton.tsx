@@ -4,17 +4,6 @@ import SunIcon from "@/components/icons/Sun";
 
 const target = "theme";
 
-const themes = [
-  {
-    name: "dark",
-    icon: <MoonIcon />,
-  },
-  {
-    name: "light",
-    icon: <SunIcon />,
-  },
-];
-
 type Theme = "dark" | "light";
 
 export default function DarkModeToggle() {
@@ -30,12 +19,12 @@ export default function DarkModeToggle() {
   }, [darkMode]);
 
   return (
-    <div className="fixed top-6 right-6 text-xl">
+    <div className="text-xl">
       <button
         type="button"
         popovertarget={target}
         popovertargetAction="show"
-        class="anchor-theme rounded-full p-1.5 style-base w-8 h-8 flex items-center justify-center z-50 border"
+        class="anchor-theme rounded-full p-1 style-base w-7 h-7 flex items-center justify-center z-50 border"
         onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")}
       >
         {darkMode === "dark" ? <SunIcon /> : <MoonIcon />}
