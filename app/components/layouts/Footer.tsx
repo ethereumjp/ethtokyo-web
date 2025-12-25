@@ -1,5 +1,6 @@
 import LogoIcon from "@/components/icons/Logo";
 import NewsletterPopover from "@/components/ui/$NewsletterPopover";
+import { GITHUB_DESGIN_ASSETS_URL, GITHUB_URL } from "@/const";
 
 export default function Footer() {
   return (
@@ -27,16 +28,21 @@ export default function Footer() {
           <NewsletterPopover />
         </li>
         <li>
-          <a
-            href="https://github.com/ethereumjp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </li>
       </ul>
       <ul class="inline-flex gap-4 text-sm [>a]:font-mono">
+        <li>
+          <a
+            href={GITHUB_DESGIN_ASSETS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Design Assets
+          </a>
+        </li>
         <li>
           <a href="/privacy-policy">Privacy Policy</a>
         </li>
