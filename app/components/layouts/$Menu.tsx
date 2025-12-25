@@ -51,7 +51,7 @@ export default function Menu() {
           </button>
           <nav
             class={`
-              font-mono font-bold text-base
+              font-mono text-base
               absolute top-12 left-0 w-full overflow-hidden transition-all duration-200 ease-in-out sm:style-base-menu bg-primary text-light
               sm:static sm:w-auto sm:h-full sm:overflow-visible sm:bg-transparent sm:transition-none
               ${isOpen ? "max-h-screen border-b" : "max-h-0"}

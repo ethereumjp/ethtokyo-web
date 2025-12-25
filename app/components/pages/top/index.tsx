@@ -1,5 +1,4 @@
 import Logo from "@/components/icons/LogoGradient";
-import Footer from "@/components/layouts/Footer";
 import Layout from "@/components/layouts/MainLayout";
 import PastEvents from "@/components/pages/top/PastEvents";
 
@@ -29,6 +28,11 @@ export default function TopPage() {
             ETHTokyo'26 will be held from September 19 to 27, 2026, featuring
             conferences, events, and hackathons during the period.
           </p>
+          <div class="flex items-center justify-center pt-4">
+            <a class="btn mx-auto" href="/manifest">
+              Read more
+            </a>
+          </div>
         </div>
       </div>
       <div class="w-full pt-8 pb-9 px-6 border-b">

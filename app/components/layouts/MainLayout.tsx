@@ -1,8 +1,8 @@
-import type { FC } from "hono/jsx";
+import type { Child } from "hono/jsx";
 import Menu from "@/components/layouts/$Menu";
 import Footer from "@/components/layouts/Footer";
 
-export default function Layout({ children }: { children: FC }) {
+export default function Layout({ children }: { children: Child }) {
   return (
     <>
       <Menu />
