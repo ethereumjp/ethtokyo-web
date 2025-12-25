@@ -2,7 +2,8 @@ name: Deploy to github pages
 
 on:
   push:
-    branches: ['2026'] # change to 'main'later
+    branches:
+      - 'main'
 
   workflow_dispatch:
 
