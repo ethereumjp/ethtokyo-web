@@ -26,7 +26,7 @@ export default function Menu() {
 
   const navItems = [
     { href: "/", label: "Home", enabled: true },
-    { href: "/manifest", label: "Manifest", enabled: true },
+    { href: "/manifesto", label: "Manifesto", enabled: true },
     { href: "#", label: "Schedule", enabled: false },
     { href: "#", label: "Access", enabled: false },
   ];
