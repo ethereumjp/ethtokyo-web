@@ -7,3 +7,7 @@ export const SITE_DOMAIN = "ethtokyo.org";
 export const GITHUB_URL = "https://github.com/ethereumjp/ethtokyo-web";
 export const GITHUB_DESGIN_ASSETS_URL =
   "https://github.com/ethereumjp/ethtokyo-web/tree/main/public/assets";
+
+export const TELEGRAM_GROUP_LINK = "https://t.me/ethtokyo";
+
+export const TWITTER_ID = "Ethereum_JP";
