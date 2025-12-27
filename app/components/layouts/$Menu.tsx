@@ -26,7 +26,7 @@ export default function Menu() {
 
   const navItems = [
     { href: "/", label: "Home", enabled: true },
-    { href: "/manifest", label: "Manifest", enabled: true },
+    { href: "/manifesto", label: "Manifesto", enabled: true },
     { href: "#", label: "Schedule", enabled: false },
     { href: "#", label: "Access", enabled: false },
   ];
@@ -37,7 +37,7 @@ export default function Menu() {
         <div class="flex items-center h-full">
           <a
             href="/"
-            class="w-12 h-full flex items-center justify-center border-r hidden sm:flex"
+            class="w-12 h-full items-center justify-center border-r hidden sm:flex"
           >
             <LogoIcon klass="w-8.5 h-auto" stroke={32} />
           </a>
@@ -52,7 +52,7 @@ export default function Menu() {
           <nav
             class={`
               font-mono text-base
-              absolute top-12 left-0 w-full overflow-hidden transition-all duration-200 ease-in-out sm:style-base-menu bg-primary text-light
+              absolute top-12 left-0 w-full overflow-hidden transition-all duration-200 ease-in-out sm:style-base-menu bg-dark text-light
               sm:static sm:w-auto sm:h-full sm:overflow-visible sm:bg-transparent sm:transition-none
               ${isOpen ? "max-h-screen border-b" : "max-h-0"}
               sm:max-h-full sm:border-none

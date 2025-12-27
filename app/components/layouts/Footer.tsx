@@ -1,54 +1,66 @@
 import LogoIcon from "@/components/icons/Logo";
 import NewsletterPopover from "@/components/ui/$NewsletterPopover";
-import { GITHUB_DESGIN_ASSETS_URL, GITHUB_URL } from "@/const";
+import { GITHUB_URL, TELEGRAM_GROUP_LINK, TWITTER_ID } from "@/const";
 
 export default function Footer() {
   return (
-    <div class="max-w-screen-md mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between">
-      <ul class="inline-flex gap-4 text-sm font-bold [>a]:font-mono [>a]:font-bold">
+    <div class="max-w-3xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between">
+      <ul class="inline-flex gap-4 font-bold">
         <li>
           <a
-            href="https://twitter.com/Ethereum_JP"
+            href={`https://twitter.com/${TWITTER_ID}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            X
+            <img
+              class="w-4 h-4"
+              src="https://cdn.simpleicons.org/x/eee?viewbox=auto"
+              alt="X"
+            />
           </a>
         </li>
         <li>
           <a
-            href="https://t.me/ethtokyo"
+            href={TELEGRAM_GROUP_LINK}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Telegram
+            <img
+              class="w-4 h-4"
+              src="https://cdn.simpleicons.org/telegram/eee?viewbox=auto"
+              alt="Telegram"
+            />
+          </a>
+        </li>
+        <li>
+          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+            <img
+              class="w-4 h-4"
+              src="https://cdn.simpleicons.org/github/eee?viewbox=auto"
+              alt="github"
+            />
           </a>
         </li>
         <li>
           <NewsletterPopover />
         </li>
-        <li>
-          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </li>
       </ul>
       <ul class="inline-flex gap-4 text-sm [>a]:font-mono">
-        <li>
+        {/* <li>
           <a
             href={GITHUB_DESGIN_ASSETS_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Design Assets
+            Assets
           </a>
+        </li> */}
+        <li>
+          <a href="/code-of-conduct">Code of Conduct</a>
         </li>
         <li>
           <a href="/privacy-policy">Privacy Policy</a>
         </li>
-        {/* <li>
-          <a href="/code">Code of conduct</a>
-        </li> */}
         <li>
           <a href="/">
             <LogoIcon klass="w-8 h-auto" stroke={32} />

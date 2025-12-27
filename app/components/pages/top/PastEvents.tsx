@@ -10,7 +10,7 @@ export default function PastEvents() {
 
   return (
     <div class="py-10 overflow-hidden">
-      <div class="max-w-screen-md mx-auto px-4">
+      <div class="max-w-3xl mx-auto px-4">
         <h3 class="font-bold text-center text-2xl pb-8">Past events</h3>
       </div>
       <div class="flex overflow-hidden gap-2 md:gap-4 marquee py-4">

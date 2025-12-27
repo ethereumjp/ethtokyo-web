@@ -6,7 +6,7 @@ export default function TopPage() {
   return (
     <Layout>
       <div class="w-full pt-20 pb-8 px-6 border-b">
-        <div class="max-w-screen-md mx-auto flex flex-col gap-4">
+        <div class="max-w-3xl mx-auto flex flex-col gap-4">
           <Logo klass="max-w-80 h-auto mx-auto pl-4" stroke={12} />
           <h1 class="text-4xl mt-14 font-mono font-bold">ETHTokyo'26</h1>
           <p class="text-2xl">
@@ -16,7 +16,7 @@ export default function TopPage() {
         </div>
       </div>
       <div class="w-full pt-8 pb-9 px-6 border-b">
-        <div class="max-w-screen-md mx-auto">
+        <div class="max-w-3xl mx-auto">
           <h3 class="font-bold text-center text-2xl pb-5">What is ETHTokyo?</h3>
           <p>
             We are a community of Tokyo-based developers and professionals,
@@ -29,14 +29,14 @@ export default function TopPage() {
             conferences, events, and hackathons during the period.
           </p>
           <div class="flex items-center justify-center pt-4">
-            <a class="btn mx-auto" href="/manifest">
+            <a class="btn mx-auto" href="/manifesto">
               Read more
             </a>
           </div>
         </div>
       </div>
       <div class="w-full pt-8 pb-9 px-6 border-b">
-        <div class="max-w-screen-md mx-auto">
+        <div class="max-w-3xl mx-auto">
           <h3 class="font-bold text-center text-2xl pb-5">Schedule</h3>
           <ul class="list-disc list-outside pl-6">
             <li class="text-lg">ETHTokyo Week&nbsp;:&nbsp;Sep 19-27, 2026</li>
@@ -84,7 +84,7 @@ export default function TopPage() {
         </div>
       </div>
       <div class="w-full pt-8 pb-9 px-6 border-b">
-        <div class="max-w-screen-md mx-auto">
+        <div class="max-w-3xl mx-auto">
           <h3 class="font-bold text-center text-2xl pb-5">Access</h3>
           <div class="flex flex-col gap-6">
             <div>

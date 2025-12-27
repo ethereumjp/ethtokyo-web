@@ -4,8 +4,8 @@ import StaticPage from "@/components/pages/StaticPage";
 export default createRoute((c) => {
   return c.render(
     <>
-      <title>Manifest | ETHTokyo '26</title>
-      <StaticPage title="Manifest">
+      <title>Manifesto | ETHTokyo '26</title>
+      <StaticPage title="Manifesto">
         <div class="px-4 flex flex-col gap-8">
           <p>
             2026 is the first major year where the{" "}
