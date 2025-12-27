@@ -8,7 +8,7 @@ export default createRoute((c) => {
       <StaticPage title="Privacy Policy">
         <div class="px-4 flex flex-col gap-8">
           <p>
-            <strong>Last updated:</strong> [2025-12-25]
+            <strong>Last updated:</strong> [2025-12-27]
           </p>
           <section>
             <p>
@@ -33,7 +33,7 @@ export default createRoute((c) => {
             </ul>
             <p>
               We do <strong>not</strong> collect personal data automatically
-              beyond what is technically required to operate the website.
+              beyond what is technically required to operate the event.
             </p>
           </section>
           <section>
@@ -51,7 +51,7 @@ export default createRoute((c) => {
             </ul>
             <p>
               We do not sell, rent, or trade your personal data to third
-              parties.
+              parties, unless required by law.
             </p>
           </section>
           <section>
@@ -72,13 +72,12 @@ export default createRoute((c) => {
             <h2 class="font-bold text-lg mb-2">4. Data Retention</h2>
             <p>
               We retain personal data only for as long as necessary to operate
-              the event and communicate with participants. After that, the data
-              is deleted or anonymized.
+              the event and communicate with participants.
             </p>
           </section>
           <section>
             <h2 class="font-bold text-lg mb-2">5. Your Rights</h2>
-            <p>Depending on your jurisdiction, you may have the right to:</p>
+            <p>You will reserve the right at all times to:</p>
             <ul class="list-disc px-6">
               <li>Access your personal data</li>
               <li>Request correction of inaccurate data</li>
@@ -113,7 +112,7 @@ export default createRoute((c) => {
               If you have any questions about this Privacy Policy or how your
               data is handled, please contact us at:
             </p>
-            <p>contact [at] ethtokyo.org</p>
+            <p>privacy [at] ethtokyo.org</p>
           </section>
         </div>
       </StaticPage>
