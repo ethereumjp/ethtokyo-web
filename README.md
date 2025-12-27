@@ -11,6 +11,10 @@
 ## Develop
 
 ```bash
+# develop
 pnpm install
 pnpm dev
+
+# build & preview
+pnpm run preview
 ```
