@@ -11,22 +11,6 @@ export default createRoute((c) => {
             <strong>Last updated:</strong> [2025-12-27]
           </p>
           <section>
-            <p>
-              We view this event as a temporary autonomous zone dependent on a
-              high-trust social contract. This isn't a nanny state; it's a
-              framework for preserving the scarcity of attention and the
-              sanctity of self-ownership. Without these constraints, the market
-              of ideas devolves into a tragedy of the commons. Read this
-              protocol layer carefully. Violating it signals you are
-              high-entropy noise, and you will be filtered out. These rules
-              exist to maintain the emergent order of the event. If you require
-              external governance from staff to behave correctly, you have
-              already failed the aptitude test for this community. We assume you
-              are sovereign agents, capable of self-regulation. Do not force us
-              to be the leviathan.
-            </p>
-          </section>
-          <section>
             <h2 class="font-bold text-lg mb-2">1. Harassment & Consent</h2>
             <p class="pb-2">We operate on a strict opt-in protocol.</p>
             <ul class="list-disc px-6 space-y-1.5">

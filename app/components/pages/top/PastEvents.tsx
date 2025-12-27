@@ -10,10 +10,9 @@ export default function PastEvents() {
 
   return (
     <div class="py-10 overflow-hidden">
-      <div class="max-w-screen-md mx-auto px-4">
+      <div class="max-w-3xl mx-auto px-4">
         <h3 class="font-bold text-center text-2xl pb-8">Past events</h3>
       </div>
-
       <div class="flex overflow-hidden gap-2 md:gap-4 marquee py-4">
         <div class="flex shrink-0 justify-start gap-2 md:gap-4 min-w-max animate-marquee">
           {images.map((src, i) => (
@@ -44,14 +43,22 @@ export default function PastEvents() {
           ))}
         </div>
       </div>
-      <div class="flex items-center justify-center pt-4">
+      <div class="flex pt-4 gap-6 justify-center items-center">
         <a
-          class="btn mx-auto"
+          class="btn"
           href="https://gallery.ethtokyo.org/?t=BF7XUspX#FYTyVpD9puna7U422M2yrniRpJBpF17ByTa7Xegwy4xk"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View 2025 gallery &#x2197;
+          2025 gallery &#x2197;
+        </a>
+        <a
+          class="btn"
+          href="https://ethereumjp.github.io/ethtokyo-25/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          2025 web &#x2197;
         </a>
       </div>
     </div>
