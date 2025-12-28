@@ -1,4 +1,5 @@
 import { useState } from "hono/jsx";
+import SimpleIcon from "@/components/ui/SimpleIcon";
 
 const target = "newsletter";
 
@@ -72,10 +73,10 @@ export default function NewsletterDialog() {
         type="button"
         class="hover:text-secondary"
       >
-        <img
-          class="w-4 h-4"
-          src="https://cdn.simpleicons.org/substack/eee?viewbox=auto"
-          alt="github"
+        <SimpleIcon
+          klass="w-4 h-4"
+          src="https://cdn.simpleicons.org/substack"
+          alt="substack"
         />
       </button>
       <div

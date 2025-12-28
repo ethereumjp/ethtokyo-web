@@ -1,5 +1,6 @@
 import LogoIcon from "@/components/icons/Logo";
 import NewsletterPopover from "@/components/ui/$NewsletterPopover";
+import SimpleIcon from "@/components/ui/SimpleIcon";
 import { GITHUB_URL, TELEGRAM_GROUP_LINK, TWITTER_ID } from "@/const";
 
 export default function Footer() {
@@ -12,9 +13,9 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              class="w-4 h-4"
-              src="https://cdn.simpleicons.org/x/eee?viewbox=auto"
+            <SimpleIcon
+              klass="w-4 h-4"
+              src="https://cdn.simpleicons.org/x"
               alt="X"
             />
           </a>
@@ -25,18 +26,18 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              class="w-4 h-4"
-              src="https://cdn.simpleicons.org/telegram/eee?viewbox=auto"
+            <SimpleIcon
+              klass="w-4 h-4"
+              src="https://cdn.simpleicons.org/telegram"
               alt="Telegram"
             />
           </a>
         </li>
         <li>
           <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-            <img
-              class="w-4 h-4"
-              src="https://cdn.simpleicons.org/github/eee?viewbox=auto"
+            <SimpleIcon
+              klass="w-4 h-4"
+              src="https://cdn.simpleicons.org/github"
               alt="github"
             />
           </a>
