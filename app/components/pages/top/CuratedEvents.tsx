@@ -213,7 +213,7 @@ const EventTypeControls = ({ events }: { events: CuratedEvent[] }) => {
 const CuratedEvents = ({ events }: { events: CuratedEvent[] }) => (
   <div data-event-filter>
     <EventTypeControls events={events} />
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] justify-center gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-4">
       {events.map((event) => {
         const modalId = `event-${event.id}`;
         const dialogTitleId = `${modalId}-title`;
